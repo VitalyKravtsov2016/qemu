@@ -20,3 +20,10 @@ GTAGS
 *.swp
 *.patch
 *.gcov
+
+# Директории сборки QEMU
+/build/
+/build-*/
+/build-win/
+/build-linux/
+/build-*/

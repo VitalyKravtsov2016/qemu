@@ -258,3 +258,28 @@ config XLNX_ZYNQ_DDRC
     bool
 
 source macio/Kconfig
+
+config LPC1778_SYSCON
+    bool
+config LPC1778_CRC
+    bool
+config LPC1778_IOCON
+    bool
+config LPC1778_EMC
+    bool
+config LPC1778_RTC
+    bool
+config LPC1778_USB
+    bool
+config LPC1778_DAC
+    bool
+config LPC1778_GPDMA
+    bool
+config LPC1778_EEPROM
+    bool
+config LPC1778_WDT
+    bool
+    select PTIMER
+config LPC1778_APB
+    bool
+    select PTIMER

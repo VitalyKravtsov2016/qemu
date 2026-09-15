@@ -65,3 +65,11 @@ config STELLARIS_GPTM
 
 config AVR_TIMER16
     bool
+
+config LPC1778_TIMER
+    bool
+    select PTIMER
+
+config LPC1778_PWM
+    bool
+    select PTIMER

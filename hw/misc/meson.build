@@ -168,3 +168,15 @@ system_ss.add(when: 'CONFIG_SBSA_REF', if_true: files('sbsa_ec.c'))
 
 # HPPA devices
 system_ss.add(when: 'CONFIG_LASI', if_true: files('lasi.c'))
+
+system_ss.add(when: 'CONFIG_LPC1778_SYSCON', if_true: files('lpc1778_syscon.c'))
+system_ss.add(when: 'CONFIG_LPC1778_CRC', if_true: files('lpc1778_crc.c'))
+system_ss.add(when: 'CONFIG_LPC1778_IOCON', if_true: files('lpc1778_iocon.c'))
+system_ss.add(when: 'CONFIG_LPC1778_EMC', if_true: files('lpc1778_emc.c'))
+system_ss.add(when: 'CONFIG_LPC1778_RTC', if_true: files('lpc1778_rtc.c'))
+system_ss.add(when: 'CONFIG_LPC1778_USB', if_true: files('lpc1778_usb.c'))
+system_ss.add(when: 'CONFIG_LPC1778_DAC', if_true: files('lpc1778_dac.c'))
+system_ss.add(when: 'CONFIG_LPC1778_GPDMA', if_true: files('lpc1778_gpdma.c'))
+system_ss.add(when: 'CONFIG_LPC1778_EEPROM', if_true: files('lpc1778_eeprom.c'))
+system_ss.add(when: 'CONFIG_LPC1778_WDT', if_true: files('lpc1778_wdt.c'))
+system_ss.add(when: 'CONFIG_LPC1778_APB', if_true: files('lpc1778_apb.c'))
